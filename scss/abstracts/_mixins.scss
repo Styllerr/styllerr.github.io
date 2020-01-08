@@ -1,0 +1,16 @@
+@mixin link-style ($hover-color , $active-color) {
+& a {
+    text-decoration: none;
+    color: inherit;
+    &:link,
+    &:visited {
+        @extend a;
+    }
+    &:hover {
+        color: $hover-color;
+    }
+    &:active {
+        color: $active-color
+    }
+}
+}

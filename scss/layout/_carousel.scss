@@ -1,0 +1,63 @@
+.carousel-section {
+    max-width: 1600px;
+    display: grid;
+    grid-template-columns: minmax(320px, 1600px);
+    margin: 0 auto;
+}
+#carouselExampleControls {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+.prev-button {
+    background-color: $them-color;
+    font-size: 5.56rem;
+    padding: 0.5rem;
+    margin-bottom: 60px;
+}
+a.carousel-control-next {
+    justify-content: flex-end;
+    width: 15%;
+}
+a.carousel-control-prev {
+    justify-content: flex-start;
+    width: 15%;
+}
+.carousel-content {
+    width: 75%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    z-index: 1;
+    align-self: center;
+    justify-self: center;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    &__text {
+        margin-top: -7px;
+        margin-bottom: 22px;
+        line-height: 0;
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        &_colored {
+            font-weight: 700;
+            color: $them-color;
+        }
+        &_marked {
+            font-weight: 600;
+            color: $them-color;
+        }
+    }
+    &__button {
+        border: 2px solid $them-color;
+        background: none;
+        color: $white;
+        text-transform: uppercase;
+        font-family: "Roboto";
+        font-weight: normal;
+        font-size: 14px;
+        padding: 10px 27px;
+    }
+}

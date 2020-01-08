@@ -1,0 +1,81 @@
+// Open Sans
+@font-face {
+    font-family: "Open Sans";
+    src: url("font/opensans/OpenSans-Light.eot");
+    src: local("Open Sans Light"), local("OpenSans-Light"),
+        url("font/opensans/OpenSans-Light.eot?#iefix")
+            format("embedded-opentype"),
+        url("font/opensans/OpenSans-Light.woff") format("woff"),
+        url("font/opensans/OpenSans-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-Regular.eot");
+    src: local("Open Sans Regular"), local("OpenSans-Regular"),
+        url("font/opensans/OpenSans-Regular.eot?#iefix")
+            format("embedded-opentype"),
+        url("font/opensans/OpenSans-Regular.woff") format("woff"),
+        url("font/opensans/OpenSans-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans';
+	src: url('OpenSans-SemiBold.eot');
+	src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'),
+		url('OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('OpenSans-SemiBold.woff') format('woff'),
+		url('OpenSans-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url("OpenSans-Bold.eot");
+    src: local("Open Sans Bold"), local("OpenSans-Bold"),
+        url("font/opensans/OpenSans-Bold.eot?#iefix")
+            format("embedded-opentype"),
+        url("font/opensans/OpenSans-Bold.woff") format("woff"),
+        url("font/opensans/OpenSans-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto Light"), local("Roboto-Light"),
+        url("font/roboto/Robotolight.woff2") format("woff2"),
+        url("font/roboto/Robotolight.woff") format("woff"),
+        url("font/roboto/Robotolight.ttf") format("truetype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("font/roboto/Roboto.woff2") format("woff2"),
+        url("font/roboto/Roboto.woff") format("woff"),
+        url("font/roboto/Roboto.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto Bold"), local("Roboto-Bold"),
+        url("font/roboto/Robotobold.woff2") format("woff2"),
+        url("font/roboto/Robotobold.woff") format("woff"),
+        url("font/roboto/Robotobold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto";
+    src: local("Roboto Black"), local("Roboto-Black"),
+        url("font/roboto/Robotoblack.woff2") format("woff2"),
+        url("font/roboto/Robotoblack.woff") format("woff"),
+        url("font/roboto/Robotoblack.ttf") format("truetype");
+    font-weight: 900;
+    font-style: normal;
+}
