@@ -117,12 +117,14 @@ body {
     z-index: 1;
 }
 .popup-basket {
+    box-sizing: border-box;
     border: 1px solid #1abc9c;
     padding: 4px;
     font-size: 12px;
     position: absolute;
     top: 27px;
     opacity: 0;
+    transition: opacity 1s;
 } 
 .popup-basket__text {
     font-size: 16px;
@@ -282,7 +284,8 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    display: none;
+    opacity: 0;
+    transition: opacity 1s;
 }
 .overlay-buy__item {
     border: 1px solid #ffffff;
@@ -308,7 +311,7 @@ body {
     background-color: #1abc9c;
 }
 .wraper-card:hover>.overlay-buy {
-    display: grid;
+    opacity: 1;
 }
 
 .uikit__row6{

@@ -35,3 +35,11 @@
     right: 2px;
     top: 2px;
 }
+.newsletter-submit__button:hover {
+    color: #4e9b89;
+    background-color: #ffffff;
+}
+.newsletter-submit__button:active {
+    background-color: #285047;
+    font-weight: bolder;
+}
