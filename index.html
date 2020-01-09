@@ -17,27 +17,29 @@
 
 <body>
     <header class="header">
-        <section class="top-header">
-            <div class="contact-info">
-                <a href="tel:123-123456789" class="contact-info_call-me">
-                    <i class="pe-7s-call contact-info_icon"></i>
-                    <span class="call-me_text">123-123456789</span>
-                </a>
-                <a href="mailto:info@ltntcom" class="contact-info_mail-me">
-                    <i class="pe-7s-mail contact-info_icon"></i>
-                    <span class="mail-me_text">info@ltnt.com</span>
-                </a>
+        <div class="top-header-wrapper">
+            <div class="top-header">
+                <div class="contact-info">
+                    <a href="tel:123-123456789" class="contact-info_call-me">
+                        <i class="pe-7s-call contact-info_icon"></i>
+                        <span class="call-me_text">123-123456789</span>
+                    </a>
+                    <a href="mailto:info@ltntcom" class="contact-info_mail-me">
+                        <i class="pe-7s-mail contact-info_icon"></i>
+                        <span class="mail-me_text">info@ltnt.com</span>
+                    </a>
+                </div>
+                <nav class="login-menu">
+                    <a href="#" class="login-menu_item">Account</a>
+                    <a href="#" class="login-menu_item">Wishlist</a>
+                    <a href="#" class="login-menu_item">Cart</a>
+                    <a href="#" class="login-menu_item">Checkout</a>
+                    <a href="#" class="login-menu_item"><i class="pe-7s-lock"></i>
+                        Login/Register</a>
+                </nav>
             </div>
-            <nav class="login-menu">
-                <a href="#" class="login-menu_item">Account</a>
-                <a href="#" class="login-menu_item">Wishlist</a>
-                <a href="#" class="login-menu_item">Cart</a>
-                <a href="#" class="login-menu_item">Checkout</a>
-                <a href="#" class="login-menu_item"><i class="pe-7s-lock"></i>
-                    Login/Register</a>
-            </nav>
-        </section>
-        <section class="menu-section">
+        </div>
+        <div class="menu-section">
             <div class="logo">
                 <span class="header__logo">mart</span>
             </div>
@@ -62,7 +64,7 @@
                     </div>
                 </a>
             </div>
-        </section>
+        </div>
     </header>
     <section class="carousel-section">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -93,7 +95,7 @@
             <a href="#" class="carousel-content__button">Buy Now</a>
         </div>
     </section>
-    <section class="about-section">
+    <div class="about-section">
         <a href="#" class="about-section__item link">
             <i class="pe-7s-settings link__icon"></i>
             <h2 class="link__caption">setting</h2>
@@ -122,77 +124,237 @@
                 efficiantur in. Nec id tempor imperdiet deterruisset, doctus volumus explicari qui ex, appareat
                 similique an usu.</p>
         </a>
-    </section>
-    <section class="new-collection">
-        <h2 class="new-collection__header">New collection</h2>
-        <div class="new-collection__line">
+    </div>
+    <div class="wraper-new-collection">
+        <section class="new-collection">
+            <h2 class="new-collection__header">New collection</h2>
+            <div class="new-collection__line">
+                <div class="colorline"></div>
+            </div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic1.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">Blue Tshirt</div>
+                    <div class="card__price">$26</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic2.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">WOMAN shirt</div>
+                    <div class="card__price">$31</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic3.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">YELLOW Tshirt</div>
+                    <div class="card__price">$21</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic4.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">Cool lingerie</div>
+                    <div class="card__price">$56</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="featured">
+        <h2 class="featured__header">featured products</h2>
+        <div class="featured__line">
             <div class="colorline"></div>
         </div>
-        <div class="new-collection__item">
-            <div class="card">
-                <img src="img/pic1.jpg" alt="" class="card__img">
-                <div class="card__produckt-name">Blue Tshirt</div>
-                <div class="card__price">$26</div>
-                <div class="card__label-new">new</div>
-                <div class="card__label-sale">sale</div>
-            </div>
-            <div class="overlay-buy">
-                <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
-                <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
-                <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
-                <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
-                    <span class="overlay-buy__add-text">add to cart</span>
+        <nav class="gallery-menu">
+            <a href="#" class="gallery-menu__item">All
+                <div class="gallery-menu__counter">8</div>
+            </a>
+            <a href="#" class="gallery-menu__item">Dresses and Suits
+                <div class="gallery-menu__counter">8</div>
+            </a>
+            <a href="#" class="gallery-menu__item">Accessories
+                <div class="gallery-menu__counter">8</div>
+            </a>
+            <a href="#" class="gallery-menu__item">Miscellaneous
+                <div class="gallery-menu__counter">8</div>
+            </a>
+        </nav>
+        <div class="wraper-featured">
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic5.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">Blue Tshirt</div>
+                    <div class="card__price">$26</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="new-collection__item">
-            <div class="card">
-                <img src="img/pic2.jpg" alt="" class="card__img">
-                <div class="card__produckt-name">WOMAN shirt</div>
-                <div class="card__price">$31</div>
-                <div class="card__label-new">new</div>
-                <div class="card__label-sale">sale</div>
-            </div>
-            <div class="overlay-buy">
-                <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
-                <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
-                <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
-                <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
-                    <span class="overlay-buy__add-text">add to cart</span>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic6.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">WOMAN shirt</div>
+                    <div class="card__price">$31</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="new-collection__item">
-            <div class="card">
-                <img src="img/pic3.jpg" alt="" class="card__img">
-                <div class="card__produckt-name">YELLOW Tshirt</div>
-                <div class="card__price">$21</div>
-                <div class="card__label-new">new</div>
-                <div class="card__label-sale">sale</div>
-            </div>
-            <div class="overlay-buy">
-                <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
-                <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
-                <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
-                <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
-                    <span class="overlay-buy__add-text">add to cart</span>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic7.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">YELLOW Tshirt</div>
+                    <div class="card__price">$21</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="new-collection__item">
-            <div class="card">
-                <img src="img/pic4.jpg" alt="" class="card__img">
-                <div class="card__produckt-name">Cool lingerie</div>
-                <div class="card__price">$56</div>
-                <div class="card__label-new">new</div>
-                <div class="card__label-sale">sale</div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic8.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">Cool lingerie</div>
+                    <div class="card__price">$56</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
             </div>
-            <div class="overlay-buy">
-                <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
-                <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
-                <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
-                <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
-                    <span class="overlay-buy__add-text">add to cart</span>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic9.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">Blue Tshirt</div>
+                    <div class="card__price">$26</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic10.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">WOMAN shirt</div>
+                    <div class="card__price">$31</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic11.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">YELLOW Tshirt</div>
+                    <div class="card__price">$21</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new-collection__item">
+                <div class="card">
+                    <img src="img/pic12.jpg" alt="" class="card__img">
+                    <div class="card__produckt-name">Cool lingerie</div>
+                    <div class="card__price">$56</div>
+                    <div class="card__label-new">new</div>
+                    <div class="card__label-sale">sale</div>
+                </div>
+                <div class="overlay-buy">
+                    <div class="overlay-buy__like overlay-buy__item"><i class="pe-7s-like"></i></div>
+                    <div class="overlay-buy__share overlay-buy__item"><i class="pe-7s-shuffle"></i> </div>
+                    <div class="overlay-buy__remind overlay-buy__item"><i class="pe-7s-clock"></i></div>
+                    <div class="overlay-buy__add overlay-buy__item"><i class="pe-7s-cart"></i>
+                        <span class="overlay-buy__add-text">add to cart</span>
+                    </div>
                 </div>
             </div>
         </div>
