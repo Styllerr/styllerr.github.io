@@ -29,3 +29,13 @@
         box-shadow: 0 2px 0 $bg, 0 -2px 0 $bg; 
     }
 }
+
+@mixin logo ($fsz, $fw) {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-size: $fsz;
+        &:first-letter {
+            color: $mountainMeadow;
+            font-weight: $fw;
+        }
+}

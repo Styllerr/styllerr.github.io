@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
 }
 .blog {
     width: 32%;
@@ -18,5 +19,49 @@
         width: 100%;
         height: auto;
     }
-
+    &__caption {
+        font-size: 18px;
+        font-weight: 600;
+        margin-top: 5px;
+        letter-spacing: -0.37px;
+        padding-right: 15px;
+        line-height: 1.4;
+    }
+    &__line {
+        width: 39%;
+        border: none;
+        background-color: $puertoRico;
+        color: $puertoRico;
+        height: 3px;
+        margin: 10px auto 23px 0;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: normal;
+        letter-spacing: -0.3px;
+        padding-right: 15px;
+        line-height: 1.8;
+        margin-bottom: 13px;
+    }
+    &__button {
+        display: inline-block;
+        padding: 13px 42px;
+        border: none;
+        border-radius: 3px;
+        background-color: $puertoRico;
+        font-family: "Open Sans";
+        font-weight: 300;
+        font-size: 16px;
+        color: $white;
+        &:hover {
+            background-color: $mountainMeadow-active;
+            color: $white;
+            text-decoration: none;
+        }
+        &:active {
+            background-color: $white;
+            color: $mountainMeadow-active;
+            text-decoration: none;
+        }
+    }
 }

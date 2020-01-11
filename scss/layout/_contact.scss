@@ -1,0 +1,64 @@
+.contact-section {
+    max-width: $page-size;
+    margin: 0 auto;
+    padding: 100px 0;
+    background: url(../img/bg-map.jpg) 100% 100% no-repeat;
+    background-size: cover;
+    background-position: center center;
+    font-family: "Roboto" , sans-serif;
+    color: $white;
+    &__header {
+        color: $white;
+    }
+    &__line {
+        text-align: center;
+    }
+    
+}
+.wrapper-contact {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.info {
+    flex-basis: 49%;
+    &__logo {
+        @include logo (72px, 300);
+    }
+    &__address {
+        width: 50%;
+    }
+    &__network {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+}
+.address {
+    width: 50%;
+    &__office,
+    &__tel,
+    &__email {
+        font-weight: 300;
+        font-size: 14px;
+        &_marked {
+            color: $puertoRico;
+            font-weight: 700;
+        }
+    }
+    
+}
+.network {
+    width: 30px;
+    height: 30px;
+    border: 1px solid $white;
+    color: $white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background-color: $puertoRico;
+    }
+}

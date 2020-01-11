@@ -1,4 +1,6 @@
 .client-section {
+    max-width: $page-size;
+    margin: 0 auto;
     background-color: $hawkes-blue;
     padding: 100px 0 77px;
     &__line {

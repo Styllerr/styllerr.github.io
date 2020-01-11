@@ -784,6 +784,8 @@ a.carousel-control-prev, .top-header a.carousel-control-prev:link, .top-header a
 
 .wrapper-new-collection, .wrapper-best-sellers {
   background-color: #e9f0fd;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .section-header {
@@ -1068,6 +1070,8 @@ a.carousel-control-prev, .top-header a.carousel-control-prev:link, .top-header a
 }
 
 .sale-season {
+  max-width: 1600px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1080,7 +1084,7 @@ a.carousel-control-prev, .top-header a.carousel-control-prev:link, .top-header a
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
   background: url(../img/bg-holl.jpg) 100% 100% no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -1184,10 +1188,13 @@ a.carousel-control-prev, .top-header a.carousel-control-prev:link, .top-header a
 }
 
 .newslatter {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 100px 0;
   background-color: #4ec6ab;
   background-image: url(../img/bg-green.jpg);
   background-size: cover;
+  background-position: center center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,6 +1267,8 @@ a.carousel-control-prev, .top-header a.carousel-control-prev:link, .top-header a
 }
 
 .client-section {
+  max-width: 1600px;
+  margin: 0 auto;
   background-color: #e9f0fd;
   padding: 100px 0 77px;
 }
@@ -1323,6 +1332,7 @@ a.carousel-control-prev, .top-header a.carousel-control-prev:link, .top-header a
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
 }
 
 .blog {
@@ -1332,5 +1342,150 @@ a.carousel-control-prev, .top-header a.carousel-control-prev:link, .top-header a
 .blog__img {
   width: 100%;
   height: auto;
+}
+
+.blog__caption {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 5px;
+  letter-spacing: -0.37px;
+  padding-right: 15px;
+  line-height: 1.4;
+}
+
+.blog__line {
+  width: 39%;
+  border: none;
+  background-color: #4ec6ab;
+  color: #4ec6ab;
+  height: 3px;
+  margin: 10px auto 23px 0;
+}
+
+.blog__text {
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: -0.3px;
+  padding-right: 15px;
+  line-height: 1.8;
+  margin-bottom: 13px;
+}
+
+.blog__button {
+  display: inline-block;
+  padding: 13px 42px;
+  border: none;
+  border-radius: 3px;
+  background-color: #4ec6ab;
+  font-family: "Open Sans";
+  font-weight: 300;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.blog__button:hover {
+  background-color: #22ddb8;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.blog__button:active {
+  background-color: #ffffff;
+  color: #22ddb8;
+  text-decoration: none;
+}
+
+.contact-section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background: url(../img/bg-map.jpg) 100% 100% no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Roboto" , sans-serif;
+  color: #ffffff;
+}
+
+.contact-section__header {
+  color: #ffffff;
+}
+
+.contact-section__line {
+  text-align: center;
+}
+
+.wrapper-contact {
+  max-width: 1110px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.info {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+
+.info__logo {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-size: 72px;
+}
+
+.info__logo:first-letter {
+  color: #1abc9c;
+  font-weight: 300;
+}
+
+.info__address {
+  width: 50%;
+}
+
+.info__network {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+}
+
+.address {
+  width: 50%;
+}
+
+.address__office, .address__tel, .address__email {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.address__office_marked, .address__tel_marked, .address__email_marked {
+  color: #4ec6ab;
+  font-weight: 700;
+}
+
+.network {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.network:hover {
+  background-color: #4ec6ab;
 }
 /*# sourceMappingURL=main.css.map */

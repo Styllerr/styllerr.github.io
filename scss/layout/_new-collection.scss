@@ -1,5 +1,7 @@
 .wrapper-new-collection {
     background-color: $hawkes-blue;
+    max-width: $page-size;
+    margin: 0 auto;
 }
 .section-header {
     flex-basis: 100%;
