@@ -1,0 +1,30 @@
+.client-section {
+    background-color: $hawkes-blue;
+    padding: 100px 0 77px;
+    &__line {
+        flex-basis: 100%;
+        text-align: center;
+        padding: 1.5625rem 0 4.6875rem;
+    }
+}
+.wrapper-client-link {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1110px;
+}
+.client-link {
+    flex-basis: 24%;
+    border: 1px solid $puertoRico;
+    &:hover {
+        border: 3px solid $white;
+    }
+    &:active {
+        border: 3px solid $mountainMeadow-active;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+}

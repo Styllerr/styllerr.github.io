@@ -1,0 +1,22 @@
+.blog-section {
+    padding: 100px 0 80px;
+    &__line {
+        text-align: center;
+        padding: 27px 0 77px;
+    }
+}
+.wrapper-blog {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.blog {
+    width: 32%;
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+
+}

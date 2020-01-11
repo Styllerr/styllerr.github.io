@@ -6,15 +6,12 @@
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     text-transform: uppercase;
-    &__header {
-        @extend %section-header;
-    }
     &__line {
         flex-basis: 100%;
         text-align: center;
         padding: 1.5625rem 0 4.6875rem;
     }
-    .wraper-featured {
+    .wrapper-featured {
         max-width: 1100px;
         display: flex;
         flex-wrap: wrap;

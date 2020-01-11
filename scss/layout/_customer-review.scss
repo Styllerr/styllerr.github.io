@@ -1,0 +1,59 @@
+.customer-review {
+    padding: 100px 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Open Sans";
+    color: $emperor;
+    &__line {
+        margin: 28px 0 80px;
+    }
+    &__img {
+        width: 13.75%;
+        height: auto;
+        border: none;
+        border-radius: 50%;
+    }
+    &__text {
+        max-width: 800px;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        margin: 33px 0;
+    }
+    &__name {
+        color: $mountainMeadow;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 0;
+        &:after {
+            content: " -";
+        }
+        &:before {
+            content: "- ";
+        }
+        &__from {
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
+}
+.review-selector {
+    display: flex;
+    width: 290px;
+    padding-top: 30px;
+    justify-content: space-between;
+    &__item {
+        width: 82px;
+        height: 82px;
+        border: 5px solid $black;
+        border-radius: 50%;
+        &:hover {
+            border-color: $mountainMeadow;
+        }
+        &:active {
+            border-color: $mountainMeadow-active;
+        }
+    }
+}

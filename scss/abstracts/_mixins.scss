@@ -14,3 +14,18 @@
     }
 }
 }
+
+@mixin colorline ($main, $bg) {
+    @extend %colorline;
+    border-top: 2px solid $bg;
+    border-bottom: 2px solid $bg;
+    background-color: $main;
+    box-shadow: 0 2px 0 $main, 0 -2px 0 $main;
+    &_revers {
+        @extend %colorline;
+        border-top: 2px solid $main;
+        border-bottom: 2px solid $main;
+        background-color: $bg;
+        box-shadow: 0 2px 0 $bg, 0 -2px 0 $bg; 
+    }
+}
