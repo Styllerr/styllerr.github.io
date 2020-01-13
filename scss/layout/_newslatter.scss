@@ -1,8 +1,13 @@
-.newslatter {
+.newslatter-section{
     max-width: $page-size;
     margin: 0 auto;
-    padding: 100px 0;
+    padding-bottom: 7.5em;
     background-color: $puertoRico;
+    @include header ($emperor);
+    
+    &__colorline {
+        @include colorline ($white , $mountainMeadow)
+    }
     background-image: url(../img/bg-green.jpg);
     background-size: cover;
     background-position: center center;
@@ -21,12 +26,13 @@
     }
 }
 .wrapper-submit {
-    padding: 42px 0 33px;
+    padding-top: 42px;
     width: 100%;
 }
 .newsletter-submit {
     position: relative;
-    width: 33.75%;
+    width: 90%;
+    max-width: 540px;
     margin: 0 auto;
     &__field {
         width: 100%;

@@ -1,18 +1,38 @@
 .about-section {
-    max-width: 1100px;
+    max-width: 1110px;
     @extend %main-maket;
     justify-content: space-between;
+    @media screen and (max-width: $screen-max-lg) {
+        justify-content: space-around;
+    }
+    @media screen and (max-width: $screen-md) {
+        justify-content: space-around;
+    }
+    @media screen and (max-width: $screen-min-sd) {
+        justify-content: center;
+        padding: 5px;
+    }
     @include link-style($mountainMeadow, inherit , $mountainMeadow-active , inherit);
     padding-top: 6.25%;
     padding-bottom: 5%;
     font-family: 'Open Sans', sans-serif;
-}
-.about-section__item {
-    flex-basis: 24%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    &__item {
+        flex-basis: 24%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (max-width: $screen-max-lg) {
+            flex-basis: 40%;
+        }
+        @media screen and (max-width: $screen-md) {
+            flex-basis: 45%;
+        }
+        @media screen and (max-width: $screen-min-sd) {
+            flex-basis: 100%;
+        }
+    }
+    
 }
 .link {
     text-decoration: none;

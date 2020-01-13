@@ -2,15 +2,16 @@
     max-width: $page-size;
     margin: 0 auto;
     background-color: $hawkes-blue;
-    padding: 100px 0 77px;
-    &__line {
-        flex-basis: 100%;
-        text-align: center;
-        padding: 1.5625rem 0 4.6875rem;
+    
+    @include header ($emperor);
+    
+    &__colorline {
+        @include colorline ($mountainMeadow , $hawkes-blue)
     }
 }
 .wrapper-client-link {
     margin: 0 auto;
+    padding-bottom: 77px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

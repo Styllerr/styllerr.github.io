@@ -13,6 +13,16 @@
     font-size: 5.56rem;
     padding: 0.5rem;
     margin-bottom: 60px;
+    @media screen and (max-width: $screen-md) {
+        font-size: 2.78rem;
+        padding: 0.4rem;
+        margin-bottom: 40px;
+    }
+    @media screen and (max-width: $screen-min-sd) {
+        font-size: 1.39rem;
+        padding: 0.2rem;
+        margin-bottom: 20px;
+    }
 }
 a.carousel-control-next {
     justify-content: flex-end;
@@ -32,6 +42,18 @@ a.carousel-control-prev {
     font-family: "Open Sans", sans-serif;
     font-weight: normal;
     font-size: 48px;
+    @media screen and (max-width: $screen-lg) {
+        font-size: 32px;
+    }
+    @media screen and (max-width: $screen-md) {
+        font-size: 24px;
+    }
+    @media screen and (max-width: $screen-min-sd) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: $screen-sd) {
+        font-size: 12px;
+    }
     text-transform: uppercase;
     color: $white;
     text-align: center;
@@ -59,6 +81,14 @@ a.carousel-control-prev {
         font-weight: normal;
         font-size: 14px;
         padding: 10px 27px;
+        @media screen and (max-width: $screen-md) {
+            padding: 5px 10px;
+            font-size: 12px;
+        }
+        @media screen and (max-width: $screen-min-sd) {
+            font-size: 10px;
+            padding: 5px;
+        }
         &:hover {
             border: 3px solid $white;
             color: $puertoRico;
@@ -66,7 +96,7 @@ a.carousel-control-prev {
             text-decoration: none;
         }
         &:active {
-            background-color:$bg-btn;
+            background-color: $bg-btn;
         }
     }
 }

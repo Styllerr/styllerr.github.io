@@ -1,21 +1,15 @@
-.featured {
+.featured-section {
     @extend %main-maket;
-    max-width: 1100px;
-    padding: 6.25% 0;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    &__line {
-        flex-basis: 100%;
-        text-align: center;
-        padding: 1.5625rem 0 4.6875rem;
+    width: 100%;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    @include header($emperor);
+    &__colorline {
+        @include colorline($mountainMeadow, $white);
     }
-    .wrapper-featured {
-        max-width: 1100px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+    &__item {
+        @extend .new-section__item;
     }
 }
 .gallery-menu {
@@ -24,9 +18,14 @@
     flex-basis: 100%;
     flex-wrap: nowrap;
     justify-content: center;
+    
+    @media screen and (max-width: $screen-min-sd) {
+        flex-wrap: wrap;
+        padding: 10px 0 50px;
+    }
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
-    &>a:not(:first-of-type){
+    & > a:not(:first-of-type) {
         margin-left: 10px;
     }
     &__item {
@@ -37,6 +36,12 @@
         border: 1px solid $dustyGray;
         border-radius: 2px;
         font-size: 16px;
+        @media screen and (max-width: $screen-min-sd) {
+            font-size: 10px;
+            padding: 3px 2px;
+            text-transform: lowercase;
+
+        }
         color: $dustyGray;
         position: relative;
         &:hover {
@@ -68,4 +73,7 @@
         right: -10px;
         display: none;
     }
+}
+.wrapper-featured {
+    @extend .wrapper-new-section;
 }

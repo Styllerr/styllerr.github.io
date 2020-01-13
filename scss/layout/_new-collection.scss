@@ -1,42 +1,71 @@
-.wrapper-new-collection {
+.new-section {
     background-color: $hawkes-blue;
     max-width: $page-size;
     margin: 0 auto;
-}
-.section-header {
-    flex-basis: 100%;
-    text-align: center;
-    color: $emperor;
-    font-size: 48px;
-    font-family: "Roboto";
-    font-weight: 900;
-    text-transform: uppercase;
-}
-.new-collection {
-    @extend %main-maket;
-    max-width: 1100px;
-    justify-content: space-between;
-    padding: 6.25% 0;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
-    text-transform: uppercase;
-    &__line {
-        flex-basis: 100%;
-        text-align: center;
-        padding: 1.5625rem 0 4.6875rem;
+    display: flex;
+    flex-direction: column;
+    @include header ($emperor);
+    
+    &__colorline {
+        @include colorline ($mountainMeadow , $hawkes-blue)
     }
     &__item {
         display: flex;
-        flex-wrap: wrap;
-        flex-basis: 24%;
-        position: relative;
+        width: 24.5%;
         margin-bottom: 30px;
+        justify-content: space-between;
+        @media screen and (max-width: $screen-max-lg) {
+            width: 40%;
+            justify-content: space-around;
+        }
+        @media screen and (max-width: $screen-md) {
+            width: 45%;
+            justify-content: space-around;
+        }
+        @media screen and (max-width: $screen-min-sd) {
+            width: 100%;
+            justify-content: center;
+        }
+        &:hover {
+            & .overlay-buy {
+                opacity: 1;
+            }
+            & .card__produckt-name {
+                background-color: $mountainMeadow;
+            }
+            & .card__price {
+                background-color: $mountainMeadow;
+            }
+        }
     }
 }
-.colorline {
-    @include colorline ($mountainMeadow , $white);
+.wrapper-new-section {
+    max-width: 1110px;
+    width: 100%;
+    padding-bottom: 6.25%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    @media screen and (max-width: $screen-max-lg) {
+        justify-content: space-around;
+    }
+    @media screen and (max-width: $screen-md) {
+        justify-content: space-around;
+    }
+    @media screen and (max-width: $screen-min-sd) {
+        justify-content: center;
+        padding: 5px;
+    }
+}
+.wrapper-card {
+    position: relative;
 }
 .card {
+    width: 255px;
     display: grid;
     grid-template-columns: 1fr 21.18%;
     position: relative;
@@ -70,16 +99,14 @@
         padding: 9px 16px;
         right: 10px;
     }
-    &_new>&__label-new,
-    &_sale>&__label-sale {
+    &_new > &__label-new,
+    &_sale > &__label-sale {
         display: block;
     }
 }
 .overlay-buy {
-    // width: 235px;
-    width: 90%;
-    // height: 260px;
-    height: 75%;
+    width: 235px;
+    height: 260px;
     display: grid;
     grid-template-columns: repeat(3, 50px);
     grid-gap: 9px;
@@ -92,6 +119,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
+    cursor: pointer;
     opacity: 0;
     transition: opacity 1s;
     &__item {
@@ -102,6 +130,9 @@
         align-items: center;
         justify-content: center;
         font-weight: normal;
+        &:hover {
+            background-color: $mountainMeadow;
+        }
     }
     &__add {
         grid-column: 1 / 4;
@@ -110,23 +141,8 @@
     }
     &__add-text {
         text-transform: uppercase;
-        font-family: 'Open Sans', sans-serif;
+        font-family: "Open Sans", sans-serif;
         font-size: 14px;
-    }
-}
-.overlay-buy__item:hover {
-    background-color: $mountainMeadow;
-
-}
-
-.new-collection__item:hover {
-    & .overlay-buy {
-        opacity: 1;
-    }
-    & .card__produckt-name{
-        background-color: $mountainMeadow;
-    }
-    & .card__price {
-        background-color: $mountainMeadow;
+        
     }
 }

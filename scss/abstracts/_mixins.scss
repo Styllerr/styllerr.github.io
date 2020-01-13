@@ -22,6 +22,30 @@
         }
     }
 }
+@mixin header ($fcolor) {
+    &__header {
+        color: $fcolor;
+        font-size: 48px;
+        font-family: "Roboto";
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 100px 0 27px;
+        @media screen and (max-width: $screen-max-lg) {
+            font-size: 40px;
+        }
+        @media screen and (max-width: $screen-md) {
+            font-size: 36px;
+        }
+        @media screen and (max-width: $screen-min-sd) {
+            font-size: 18px;
+        }
+    }
+    &__line {
+        text-align: center;
+        padding-bottom: 77px;
+    }
+}
 
 @mixin colorline($main, $bg) {
     @extend %colorline;
@@ -29,13 +53,6 @@
     border-bottom: 2px solid $bg;
     background-color: $main;
     box-shadow: 0 2px 0 $main, 0 -2px 0 $main;
-    &_revers {
-        @extend %colorline;
-        border-top: 2px solid $main;
-        border-bottom: 2px solid $main;
-        background-color: $bg;
-        box-shadow: 0 2px 0 $bg, 0 -2px 0 $bg;
-    }
 }
 
 @mixin logo($fsz, $fw) {

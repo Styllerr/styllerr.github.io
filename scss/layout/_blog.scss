@@ -1,8 +1,9 @@
 .blog-section {
-    padding: 100px 0 80px;
-    &__line {
-        text-align: center;
-        padding: 27px 0 77px;
+    padding-bottom: 80px;
+    @include header ($emperor);
+    
+    &__colorline {
+        @include colorline ($mountainMeadow , $white)
     }
 }
 .wrapper-blog {
@@ -15,6 +16,10 @@
 }
 .blog {
     width: 32%;
+    @media screen and (max-width: $screen-max-md) {
+        width: 90%;
+        justify-content: space-around;
+    }
     &__img {
         width: 100%;
         height: auto;
