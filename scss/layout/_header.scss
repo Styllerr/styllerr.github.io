@@ -71,13 +71,16 @@
 }
 
 .shop-navigation {
+    display: flex;
+    justify-content: space-between;
+    width: 41.62%;
     font-size: 14px;
     font-weight: bold;
-    @include link-style($mountainMeadow, $mountainMeadow-active);
+    @include link-style($mountainMeadow, inherit , $mountainMeadow-active , inherit);
 }
 
 .cart {
-    @include link-style($kilamanjaro, $kilamanjaro);
+    @include link-style($kilamanjaro , inherit, $kilamanjaro , inherit);
 }
 .counter {
     position: relative;

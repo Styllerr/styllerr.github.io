@@ -1,21 +1,29 @@
-@mixin link-style ($hover-color , $active-color) {
-& a {
-    text-decoration: none;
-    color: inherit;
-    &:link,
-    &:visited {
-        @extend a;
+@mixin link-style(
+    $hover-color,
+    $hover-color-bg,
+    $active-color,
+    $active-color-bg
+) {
+    & a {
+        text-decoration: none;
+        color: inherit;
+        &:link,
+        &:visited {
+            text-decoration: none;
+            color: inherit;
+        }
+        &:hover {
+            color: $hover-color;
+            background-color: $hover-color-bg;
+        }
+        &:active {
+            color: $active-color;
+            background-color: $active-color-bg;
+        }
     }
-    &:hover {
-        color: $hover-color;
-    }
-    &:active {
-        color: $active-color
-    }
-}
 }
 
-@mixin colorline ($main, $bg) {
+@mixin colorline($main, $bg) {
     @extend %colorline;
     border-top: 2px solid $bg;
     border-bottom: 2px solid $bg;
@@ -26,16 +34,16 @@
         border-top: 2px solid $main;
         border-bottom: 2px solid $main;
         background-color: $bg;
-        box-shadow: 0 2px 0 $bg, 0 -2px 0 $bg; 
+        box-shadow: 0 2px 0 $bg, 0 -2px 0 $bg;
     }
 }
 
-@mixin logo ($fsz, $fw) {
-        font-family: "Roboto", sans-serif;
-        font-weight: 300;
-        font-size: $fsz;
-        &:first-letter {
-            color: $mountainMeadow;
-            font-weight: $fw;
-        }
+@mixin logo($fsz, $fw) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: $fsz;
+    &:first-letter {
+        color: $mountainMeadow;
+        font-weight: $fw;
+    }
 }

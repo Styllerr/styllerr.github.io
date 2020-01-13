@@ -5,26 +5,28 @@
     background: url(../img/bg-map.jpg) 100% 100% no-repeat;
     background-size: cover;
     background-position: center center;
-    font-family: "Roboto" , sans-serif;
+    font-family: "Roboto", sans-serif;
     color: $white;
     &__header {
         color: $white;
     }
     &__line {
         text-align: center;
+        margin-top: 25px;
     }
-    
 }
 .wrapper-contact {
     max-width: 1110px;
     margin: 0 auto;
+    padding-top: 80px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .info {
-    flex-basis: 49%;
+    flex-basis: 48%;
     &__logo {
-        @include logo (72px, 300);
+        @include logo(72px, 300);
     }
     &__address {
         width: 50%;
@@ -33,6 +35,20 @@
         display: flex;
         justify-content: space-between;
         width: 50%;
+        @include link-style(
+            inherit,
+            $puertoRico,
+            inherit,
+            $mountainMeadow-active
+        );
+    }
+    &__subheader {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
     }
 }
 .address {
@@ -47,7 +63,6 @@
             font-weight: 700;
         }
     }
-    
 }
 .network {
     width: 30px;
@@ -58,7 +73,58 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &:hover {
+}
+.feedback {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 537px;
+    flex-basis: 48%;
+    font-size: 18px;
+    &__name,
+    &__email,
+    &__subject,
+    &__web {
+        flex-basis: 48%;
+        height: 2.7778em;
+        padding-left: 19px;
+        margin-bottom: 30px;
+        font-size: 18px;
+        font-weight: 300;
+        color: $white;
+        border: 1px solid $white;
+        background-color: transparent;
+    }
+    &__name {
+        @extend %placeholder;
+    }
+    &__email {
+        @extend %placeholder;
+    }
+    &__subject {
+        @extend %placeholder;
+    }
+    &__web {
+        @extend %placeholder;
+    }
+    &__message {
+        flex-basis: 100%;
+        margin-bottom: 30px;
+        padding: 15px 0 0 19px;
+        border: 1px solid $white;
+        background-color: transparent;
+        color: $white;
+        font-size: 18px;
+        font-weight: 300;
+        @extend %placeholder;
+    }
+    &__button {
+        box-sizing: border-box;
+        border: none;
+        padding: 12.38px 55px;
+        font-size: 16px;
+        color: $white;
+        text-transform: uppercase;
         background-color: $puertoRico;
     }
 }

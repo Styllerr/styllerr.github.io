@@ -59,5 +59,14 @@ a.carousel-control-prev {
         font-weight: normal;
         font-size: 14px;
         padding: 10px 27px;
+        &:hover {
+            border: 3px solid $white;
+            color: $puertoRico;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        &:active {
+            background-color:$bg-btn;
+        }
     }
 }

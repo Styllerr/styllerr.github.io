@@ -473,7 +473,7 @@
         </div>
         <div class="wrapper-client-link">
             <a href="https://home.howard.edu/" target="_blank" class="client-link">
-                <img src="img/partner01.jpg" target="_blank" alt="Howard" class="client-link__img"></a>
+                <img src="img/partner01.jpg" alt="Howard" class="client-link__img"></a>
             <a href="http://www.auburn.edu/" target="_blank" class="client-link">
                 <img src="img/partner02.jpg" alt="Auburn" class="client-link__img"></a>
             <a href="https://www.marquette.edu/" target="_blank" class="client-link">
@@ -540,8 +540,9 @@
         <div class="wrapper-contact">
             <div class="info">
                 <h2 class="info__logo">Mart</h2>
-                <h4 class="info__sudheader" >We’d love To Meet You In Person Or Via The Web!</h4>
-                <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel nulla sapien. Class aptent
+                <h4 class="info__subheader">We’d love To Meet You In Person Or Via The Web!</h4>
+                <p class="info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel nulla sapien.
+                    Class aptent
                     tacitiaptent taciti sociosqu ad lit himenaeos. Suspendisse massa urna, luctus ut vestibulum necs et,
                     vulputate quis urna. Donec at commodo erat.</p>
                 <div class="info__address address">
@@ -559,29 +560,56 @@
                     </p>
                 </div>
                 <div class="info__network">
-                    <div class="network">
-                        <i class="fab fa-facebook-f network__item"></i>
-                    </div>
-                    <div class="network">
-                        <i class="fab fa-twitter network__item"></i>
-                    </div>
-                    <div class="network">
-                        <i class="fas fa-basketball-ball network__item"></i>
-                    </div>
-                    <div class="network">
-                        <i class="fab fa-linkedin-in network__item"></i>
-                    </div>
-                    <div class="network">
-                        <i class="fab fa-codepen network__item"></i>
-                    </div>
-                    <div class="network">
-                        <i class="fab fa-github network__item"></i>
-                    </div>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <div class="network">
+                            <i class="fab fa-facebook-f network__item"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <div class="network">
+                            <i class="fab fa-twitter network__item"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/BBLofficial/" target="_blank">
+                        <div class="network">
+                            <i class="fas fa-basketball-ball network__item"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/" target="_blank">
+                        <div class="network">
+                            <i class="fab fa-linkedin-in network__item"></i>
+                        </div>
+                    </a>
+                    <a href="https://codepen.io/" target="_blank">
+                        <div class="network">
+                            <i class="fab fa-codepen network__item"></i>
+                        </div>
+                    </a>
+                    <a href="https://github.com/" target="_blank">
+                        <div class="network">
+                            <i class="fab fa-github network__item"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
+            <form action="#" method="post" name="feedback-form" class="feedback">
+                <input class="feedback__name" type="text" name="user-name" required placeholder="Your Name" tabindex="1">
+                <input class="feedback__email" type="email" name="user-email" placeholder="Your Email" required tabindex="2">
+                <input class="feedback__subject" type="text" name="subject" required placeholder="Subject" autocomplete="off" 
+                 minlength="6" maxlength="30" title="Enter from 6 to 30 letters" tabindex="3">
+                <input class="feedback__web" type="url" name="website" placeholder="Website URL" tabindex="4">
+                <textarea class="feedback__message" name="user-message" placeholder="Your Message..." required minlength="10" 
+                cols="50" rows="5" title="Enter min 10 letters" tabindex="5"></textarea>
+                <input class="feedback__button" type="submit" value="Send" tabindex="6">
+            </form>
         </div>
-
     </section>
+    <footer class="footer">
+        <div class="footer__text">
+            <span class="footer__copyright">All Rights Reserved © Dokan | Designed </span>
+            <a href="#" id="footer__link">ThemenGraph</a>
+        </div>
+    </footer>
 
 
     <script src="https://kit.fontawesome.com/08c65f0eb3.js" crossorigin="anonymous"></script>

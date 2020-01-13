@@ -2,7 +2,7 @@
     max-width: 1100px;
     @extend %main-maket;
     justify-content: space-between;
-    @include link-style($mountainMeadow, $mountainMeadow-active);
+    @include link-style($mountainMeadow, inherit , $mountainMeadow-active , inherit);
     padding-top: 6.25%;
     padding-bottom: 5%;
     font-family: 'Open Sans', sans-serif;
