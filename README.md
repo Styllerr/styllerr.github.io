@@ -1,2 +1,6 @@
-# final_task
-Финальное задание IT HIllel Front End Basic курс
+# Final_task
+Final work "Front End Basic" IT Hillel School
+(Deployed project)
+
+# Финальная работа
+Финальное задание IT HIllel, курс "Front End Basic"
