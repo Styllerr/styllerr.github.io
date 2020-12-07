@@ -1,4 +1,4 @@
-# Final_task
+# Final task
 Final work "Front End Basic" IT Hillel School
 (Deployed project)
 
